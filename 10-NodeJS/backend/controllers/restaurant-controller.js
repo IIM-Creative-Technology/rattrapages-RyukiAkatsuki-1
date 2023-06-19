@@ -47,3 +47,17 @@ export const updateRestaurant = async (req, res) => {
     }
     res.status(200).json({updatedRestaurant});
 }
+
+export const deleteRestaurant = async (req, res) => {
+    const restaurantId = req.params.id;
+    try {
+      const deletedRestaurant = await Restaurant.findByIdAndRemove(restaurantId);
+      if (!deletedRestaurant) {
+        return res.status(404).json({ message: "Unable to delete restaurant" });
+      }
+      res.status(200).json({ message: "Restaurant deleted successfully" });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json({ message: "An error occurred while deleting the restaurant" });
+    }
+  };
