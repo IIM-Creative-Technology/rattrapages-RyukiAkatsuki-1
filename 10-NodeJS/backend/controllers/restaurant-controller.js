@@ -12,3 +12,19 @@ export const getAllRestaurants = async (req, res) => {
     }
     res.status(200).json({restaurants});
 }
+
+export const addRestaurant = async (req, res) => {
+    const {name, address, zipcode, capacity} = req.body;
+    const newRestaurant = new Restaurant({
+        name, 
+        address, 
+        zipcode, 
+        capacity
+    });
+    try {
+        await newRestaurant.save();
+    } catch (err) {
+        console.log(err);
+    }
+    return res.status(200).json({newRestaurant});
+}
