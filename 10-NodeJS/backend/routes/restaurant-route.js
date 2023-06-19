@@ -7,4 +7,4 @@ restaurantRouter.get('/', getAllRestaurants);
 restaurantRouter.post('/add', addRestaurant);
 restaurantRouter.put('/update/:id', updateRestaurant);
 
-export default restaurantRouter;
+module.exports = restaurantRouter;

@@ -1,4 +1,4 @@
-import Restaurant from "../models/Restaurant";
+import Restaurant from "./models/Restaurant";
 
 export const getAllRestaurants = async (req, res) => {
     let restaurants;
@@ -8,7 +8,7 @@ export const getAllRestaurants = async (req, res) => {
         console.log(err);
     }
     if(!restaurants) {
-        return res.status(404).json({message: "No Mongoorestaurants found"});
+        return res.status(404).json({message: "No Mongoo Restaurants found"});
     }
     res.status(200).json({restaurants});
 }

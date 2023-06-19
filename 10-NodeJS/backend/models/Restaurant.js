@@ -1,4 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
+
+const Schema = mongoose.Schema;
 
 const restaurantSchema = new Schema({
     name: {
@@ -19,4 +21,4 @@ const restaurantSchema = new Schema({
     }
 });
 
-export default mongoose.model('Restaurant', restaurantSchema);
+module.exports = mongoose.model("Restaurant", restaurantSchema);
