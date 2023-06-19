@@ -6,6 +6,6 @@ const restaurantRouter = express.Router();
 restaurantRouter.get('/', getAllRestaurants);
 restaurantRouter.post('/add', addRestaurant);
 restaurantRouter.put('/update/:id', updateRestaurant);
-restaurantRouter.delete('/:id', deleteRestaurant);
+restaurantRouter.delete('/delete/:id', deleteRestaurant);
 
 export default restaurantRouter;
