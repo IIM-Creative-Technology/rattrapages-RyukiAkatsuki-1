@@ -1,5 +1,5 @@
-@import "src/scss/base/",
-"src/scss/layout/",
-"src/scss/module/",
-"src/scss/state/",
-"src/scss/theme/";
+@import "src/scss/base/reset.scss",
+"src/scss/base/default.scss",
+"src/scss/layout/article.scss",
+"src/scss/layout/header.scss",
+"src/scss/layout/footer.scss";
