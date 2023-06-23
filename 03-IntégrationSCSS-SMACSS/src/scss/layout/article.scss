@@ -1,0 +1,21 @@
+.saladeMesure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leftMesure {
+        padding: 80px;
+        h2 {
+            font-size: 52px;
+        }
+        p {
+            padding-top: 30px;
+            font-size: 18px;
+        }
+    }
+    img {
+        width: 1200px;
+    }
+    button {
+        padding: 10px 30px 10px 30px;
+    }
+}

@@ -4,6 +4,28 @@
   padding: 0;
 }
 
+.saladeMesure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.saladeMesure .leftMesure {
+  padding: 80px;
+}
+.saladeMesure .leftMesure h2 {
+  font-size: 52px;
+}
+.saladeMesure .leftMesure p {
+  padding-top: 30px;
+  font-size: 18px;
+}
+.saladeMesure img {
+  width: 1200px;
+}
+.saladeMesure button {
+  padding: 10px 30px 10px 30px;
+}
+
 header {
   background-image: linear-gradient(to bottom, rgba(176, 175, 255, 0.7), rgba(0, 255, 85, 0.3)), url("src/img/luisa-brimble-2RrBE90w0T8-unsplash.jpg");
   background-size: cover;
