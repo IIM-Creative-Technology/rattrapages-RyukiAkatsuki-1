@@ -82,4 +82,30 @@ header .socialMedia i {
   padding: 10px;
 }
 
+.preparePlace {
+  background-image: url("src/img/ismael-trevino-NDyuR4Huig8-unsplash.jpg");
+  background-size: cover;
+  height: 1000px;
+  padding-top: 200px;
+  padding-right: 100px;
+}
+.preparePlace .transparentGreen {
+  background-color: rgba(178, 210, 50, 0.7);
+  color: white;
+  margin-left: 1000px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.preparePlace .transparentGreen h2 {
+  font-size: 52px;
+}
+.preparePlace .transparentGreen p {
+  font-size: 18px;
+  padding: 20px;
+}
+.preparePlace .transparentGreen button {
+  padding: 10px 30px 10px 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
