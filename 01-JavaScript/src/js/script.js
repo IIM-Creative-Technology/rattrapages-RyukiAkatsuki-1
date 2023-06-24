@@ -72,3 +72,20 @@ for (var i = 0; i < boissons.length; i++) {
   option.textContent = boissons[i];
   selectBoisson.appendChild(option);
 }
+
+var ingredientsContainer = document.getElementById("ingredientsContainer");
+
+for (var i = 0; i < ingredients.length; i++) {
+  var ingredient = ingredients[i];
+
+  var label = document.createElement("label");
+  var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.name = "ingredient";
+  checkbox.value = ingredient.nom;
+
+  label.appendChild(checkbox);
+  label.appendChild(document.createTextNode(ingredient.nom));
+
+  ingredientsContainer.appendChild(label);
+}

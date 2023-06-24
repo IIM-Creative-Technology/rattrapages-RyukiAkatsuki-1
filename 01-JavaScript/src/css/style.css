@@ -1,0 +1,4 @@
+#ingredientsContainer {
+    display: flex;
+    flex-direction: column;
+  }
