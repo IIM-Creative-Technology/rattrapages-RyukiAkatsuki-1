@@ -5,76 +5,68 @@
 }
 
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsBlack";
+  src: url("./fonts/Poppins-Black.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsBlackItalic";
+  src: url("./fonts/Poppins-BlackItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsBold";
+  src: url("./fonts/Poppins-Bold.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsBoldItalic";
+  src: url("./fonts/Poppins-BoldItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsExtraBold";
+  src: url("./fonts/Poppins-ExtraBold.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsExtraBoldItalic";
+  src: url("./fonts/Poppins-ExtraBoldItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsItalic";
+  src: url("./fonts/Poppins-Italic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsLight";
+  src: url("./fonts/Poppins-Light.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsLightItalic";
+  src: url("./fonts/Poppins-LightItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsMedium";
+  src: url("./fonts/Poppins-Medium.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsMediumItalic";
+  src: url("./fonts/Poppins-MediumItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsRegular";
+  src: url("./fonts/Poppins-Regular.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsSemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsSemiBoldItalic";
+  src: url("./fonts/Poppins-SemiBoldItalic.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsThin";
+  src: url("./fonts/Poppins-Thin.ttf");
 }
 @font-face {
-  font-family: "";
-  src: url();
-}
-@font-face {
-  font-family: "";
-  src: url();
-}
-@font-face {
-  font-family: "";
-  src: url();
+  font-family: "PoppinsThinItalic";
+  src: url("./fonts/Poppins-ThinItalic.ttf");
 }
 .saladeMesure {
   display: flex;
@@ -303,6 +295,81 @@ header .socialMedia i {
 }
 .greenBlue .seperatorBlueGreen {
   padding: 30px;
+}
+
+.envie {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.envie img {
+  width: 800px;
+}
+.envie .leftEnvie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+}
+.envie .leftEnvie h2 {
+  font-size: 52px;
+}
+.envie .leftEnvie p {
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.envie .leftEnvie .formAll {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.envie .leftEnvie .formAll .names {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.envie .leftEnvie .formAll .names .rowName {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.envie .leftEnvie .formAll .names .rowName label {
+  margin-right: 5px;
+  font-size: 23px;
+}
+.envie .leftEnvie .formAll .formNames {
+  padding: 20px;
+}
+.envie .leftEnvie .formAll .formNames input {
+  padding: 10px;
+}
+.envie .leftEnvie .formAll .emailMotivation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.envie .leftEnvie .formAll .emailMotivation .email {
+  padding-right: 200px;
+  padding-top: 20px;
+}
+.envie .leftEnvie .formAll .emailMotivation .motivation {
+  padding-top: 50px;
+  padding-right: 200px;
+}
+.envie .leftEnvie .formAll .emailMotivation label {
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+.envie button {
+  padding: 10px 30px 10px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

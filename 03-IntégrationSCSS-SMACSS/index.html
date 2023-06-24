@@ -198,31 +198,35 @@
         </div>
     </div>
     <!-- Envie de partager -->
-    <div>
+    <div class="envie">
         <div>
             <img src="src/img/anh-nguyen-_Uqj5BQb-mw-unsplash.jpg" alt="">
         </div>
-        <div>
+        <div class="leftEnvie">
             <h2>Envie de partager ?</h2>
-            <p>Toute l'année, on recrute des employés motivés pour tous nos restaurants ! N'hésitez pas à postuler !</p>
+            <p>Toute l'année, on recrute des employés motivés <br> pour tous nos restaurants ! <br> N'hésitez pas à postuler !</p>
             <!-- Formulaire -->
-            <div>
+            <div class="formAll">
                 <!-- Nom prénom -->
-                <div>
-                    <form>
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname">
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname">
+                <div class="names">
+                    <form class="formNames">
+                        <div class="rowName">
+                            <label for="lname">Nom</label>
+                            <input type="text">
+                        </div>
+                        <div class="rowName">
+                            <label for="fname">Prénom</label>
+                            <input type="text">
+                        </div>
                     </form>
                 </div>
-                <div>
+                <div class="emailMotivation">
                     <!-- Email Motivation -->
                     <form>
-                        <label for="fname">Email</label>
-                        <input type="text" id="fname">
-                        <label for="lname">Votre motivation en quelques mots</label>
-                        <input type="text" id="lname">
+                        <label for="email">Email</label><br>
+                        <input type="text" class="email"><br><br>
+                        <label for="motivation">Votre motivation en quelques mots</label><br>
+                        <input type="text" class="motivation">
                     </form>
                 </div>
                 <button>Postuler</button>
