@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commande Salade</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <h1>Commandez votre salade Mongoo ici</h1>
+    <div id="sidebar">
+        <h3>Dernière commande</h3>
+        <div id="lastOrderDetails">
+            
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <h3>Sélections en cours</h3>
+        <div id="currentSelections">
+
+        </div>
+    </div>
 
     <form id="baseSaladForm">
         <h2>Personnalisez votre salade avec différents ingrédients</h2>
@@ -45,5 +59,6 @@
         <br><br>
         <button type="submit" id="envoyerButton" disabled>Envoyer la commande</button>
     </form>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

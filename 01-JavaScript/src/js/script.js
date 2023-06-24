@@ -55,3 +55,12 @@ var boissons = ["Vittel",
 "Fuze Tea Pêche",
 "Fuze Tea Citron vert",
 "Fuze Tea Framboise"]
+
+var selectBaseSalade = document.getElementById("baseSalade");
+
+for (var i = 0; i < basesSalades.length; i++) {
+  var option = document.createElement("option");
+  option.value = basesSalades[i];
+  option.textContent = basesSalades[i];
+  selectBaseSalade.appendChild(option);
+}
