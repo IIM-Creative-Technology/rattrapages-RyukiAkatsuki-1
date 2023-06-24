@@ -60,3 +60,19 @@ header {
 .fa-bars {
     display: none
 }
+
+@media screen and (max-width: 748px) {
+    header {
+        height: 900px;
+        width: 1200px;
+        li {
+            display: none;
+        }
+    }
+    .fa-bars {
+        display: block;
+        color: white;
+        font-size: 36px;
+        padding-left: 90px;
+    }
+}

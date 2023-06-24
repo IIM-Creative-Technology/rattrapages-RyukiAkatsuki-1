@@ -2,7 +2,7 @@
     background-image: url("src/img/ismael-trevino-NDyuR4Huig8-unsplash.jpg");
     background-size: cover;
     height: 1000px;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-right: 100px;
     .transparentGreen {
         background-color: hsla(72, 64%, 51%, 0.7);
@@ -13,13 +13,36 @@
         padding-bottom: 90px;
         h2 {
             font-size: 52px;
+            font-family: 'PoppinsMedium', sans-serif;
         }
         p {
             font-size: 18px;
             padding: 20px;
+            font-family: 'PoppinsLight', sans-serif;
         }
         button {
+            background-color: #B2D234;
             padding: 10px 30px 10px 30px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px
+        }
+    }
+}
+
+@media screen and (max-width: 748px)  {
+    .preparePlace {
+        height: 1000px;
+        width: 1155px;
+        .transparentGreen {
+            margin-left: 130px;
+            h2 {
+                font-size: 64px;
+            }
+            p {
+                font-size: 28px;
+            }
         }
     }
 }
@@ -36,10 +59,12 @@
         h2 {
             font-size: 52px;
             color: #B2D234;
+            font-family: 'PoppinsMedium', sans-serif;
         }
         p {
             font-size: 18px;
             padding-top: 20px;
+            font-family: 'PoppinsLight', sans-serif;
         }
     }
     .bottomLine {
@@ -52,10 +77,12 @@
             font-size: 24px;
             padding-top: 30px;
             color: #B2D234;
+            font-family: 'PoppinsMedium', sans-serif;
         }
         p {
             font-size: 18px;
             padding-top: 10px;
+            font-family: 'PoppinsLight', sans-serif;
         }
         .forces {
             padding: 100px;
@@ -94,6 +121,54 @@
     }
 }
 
+@media screen and (max-width: 748px)  {
+    .menuList {
+        padding: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .bottomLine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            h3 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        .allMenu {
+            padding: 200px;
+        }
+        .forces {
+            padding: 10px;
+            text-align: center;
+            .greenforce {
+                font-size: 32px;
+            }
+            .blueforce {
+                font-size: 32px;
+                color: #60A0D8;
+            }
+            p {
+                padding: 20px;
+                font-size: 18px;
+            }
+            button {
+                padding: 10px 30px 10px 30px;
+                background-color: #B2D234;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 24px
+            }
+        }
+    }
+}
+
 .greenBlue {
     background-image: url("src/img/louis-hansel-MlPD-AzZYMg-unsplash.jpg");
     background-size: cover;
@@ -126,9 +201,11 @@
         h3 {
             font-size: 52px;
             padding: 20px;
+            font-family: 'PoppinsMedium', sans-serif;
         }
         p {
             font-size: 18px;
+            font-family: 'PoppinsLight', sans-serif;
         }
     }
     .blueAll {
@@ -150,13 +227,24 @@
         h3 {
             font-size: 52px;
             padding: 20px;
+            font-family: 'PoppinsMedium', sans-serif;
         }
         p {
             font-size: 18px;
+            font-family: 'PoppinsLight', sans-serif;
         }
     }
     .seperatorBlueGreen {
         padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .greenBlue {
+        width: 1170px;
+        .blueGreen {
+            padding: 10px;
+        }
     }
 }
 
@@ -176,11 +264,14 @@
         padding: 80px;
         h2 {
             font-size: 52px;
+            font-family: 'PoppinsMedium', sans-serif;
+            color: #B2D234;
         }
         p {
             font-size: 18px;
             padding: 20px;
             text-align: center;
+            font-family: 'PoppinsLight', sans-serif;
         }
         .formAll {
             padding: 80px;
@@ -236,5 +327,19 @@
     }
     button {
         padding: 10px 30px 10px 30px;
+        background-color: #B2D234;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 24px
+    }
+}
+
+@media screen and (max-width: 768px){
+    .envie {
+        padding: 100px;
+        img {
+            width: 600px;
+        }
     }
 }

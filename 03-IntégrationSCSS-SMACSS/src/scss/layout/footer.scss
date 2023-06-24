@@ -11,9 +11,24 @@ footer {
     }
     h3 {
         font-size: 27px;
+        font-family: 'PoppinsMedium', sans-serif;
     }
     p {
         padding-top: 10px;
         font-size: 18px;
+        font-family: 'PoppinsLight', sans-serif;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        padding: 50px;
+        width: 1190px;
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 24px;
+        }
     }
 }

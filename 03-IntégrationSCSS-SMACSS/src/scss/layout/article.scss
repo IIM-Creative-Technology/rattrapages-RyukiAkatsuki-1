@@ -25,3 +25,25 @@
         font-size: 24px
     }
 }
+
+@media screen and (max-width: 748px) {
+    .saladeMesure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .leftMesure {
+            padding: 90px;
+            text-align: center;
+            h2 {
+                font-size: 64px;
+            }
+            p {
+                font-size: 28px;
+            }
+        }
+        img {
+            width: 1560px;
+        }
+    }
+}
