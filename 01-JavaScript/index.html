@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commande</title>
+    <title>Commande Salade</title>
 </head>
 <body>
     <h1>Commandez votre salade Mongoo ici</h1>
+
+    <form id="baseSaladForm">
+        <h2>Personnalisez votre salade avec différents ingrédients</h2>
+
+        <label for="baseSalade">Choissisez votre base de salade: </label>
+        <select id="baseSalade" required>
+            <option value="">Sélectionner la base de la salade</option>
+
+        </select>
+        <br><br>
+        <label>Choissisez vos 4 ingrédients (obligatoire): </label>
+        <div id="ingredientsContainter">
+
+        </div>
+        <br>
+        <label for="boisson">Choississez votre boisson :</label>
+        <select id="boisson" required>
+            <option value="">Sélectionnez une boisson</option>
+
+        </select>
+        <br><br>
+        <label for="heureLivraison">Heure de livraison: </label>
+        <input type="time" id="heureLivraison" required>
+        <br><br>
+        <label for="nom">Nom de Famille: </label>
+        <input type="text" id="nom" required>
+        <br><br>
+        <label for="prenom">Prénom: </label>
+        <input type="text" id="prenom" required>
+        <br><br>
+        <label for="adresse">Adresse: </label>
+        <input type="text" id="adresse" required>
+        <br><br>
+        <label for="telephone">Numéro de téléphone</label>
+        <input type="tel" id="telephone" required>
+        <br><br>
+        <button type="submit" id="envoyerButton" disabled>Envoyer la commande</button>
+    </form>
 </body>
 </html>
