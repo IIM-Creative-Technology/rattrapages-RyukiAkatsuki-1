@@ -108,4 +108,63 @@ header .socialMedia i {
   padding: 10px 30px 10px 30px;
 }
 
+.menuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.menuList .centerLine {
+  text-align: center;
+  padding: 20px;
+}
+.menuList .centerLine h2 {
+  font-size: 52px;
+}
+.menuList .centerLine p {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.menuList .bottomLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+.menuList .bottomLine h3 {
+  font-size: 24px;
+  padding-top: 30px;
+}
+.menuList .bottomLine p {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.menuList .bottomLine .forces {
+  padding: 100px;
+  text-align: center;
+}
+.menuList .bottomLine .forces .greenforce {
+  font-size: 64px;
+}
+.menuList .bottomLine .forces .blueforce {
+  font-size: 64px;
+}
+.menuList .bottomLine .forces p {
+  padding: 20px;
+  font-size: 18px;
+}
+.menuList .bottomLine .forces button {
+  padding: 10px 30px 10px 30px;
+}
+.menuList .bottomLine .allMenu {
+  padding: 100px;
+}
+.menuList .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

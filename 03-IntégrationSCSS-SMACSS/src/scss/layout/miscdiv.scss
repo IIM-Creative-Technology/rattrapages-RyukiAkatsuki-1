@@ -23,3 +23,62 @@
         }
     }
 }
+
+.menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    .centerLine {
+        text-align: center;
+        padding: 20px;
+        h2 {
+            font-size: 52px;
+        }
+        p {
+            font-size: 18px;
+            padding-top: 20px;
+        }
+    }
+    .bottomLine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 50px;
+        h3 {
+            font-size: 24px;
+            padding-top: 30px;
+        }
+        p {
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .forces {
+            padding: 100px;
+            text-align: center;
+            .greenforce {
+                font-size: 64px;
+            }
+            .blueforce {
+                font-size: 64px;
+            }
+            p {
+                padding: 20px;
+                font-size: 18px;
+            }
+            button {
+                padding: 10px 30px 10px 30px;
+            }
+        }
+        .allMenu {
+            padding: 100px;
+        }
+    }
+    .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
