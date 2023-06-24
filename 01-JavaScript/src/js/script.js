@@ -103,3 +103,129 @@ for (var i = 0; i < ingredients.length; i++) {
 
   ingredientsContainer.appendChild(label);
 }
+
+document.getElementById("baseSaladForm").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    var baseSaladeValue = document.getElementById("baseSalade").value;
+    var selectedIngredients = getSelectedIngredients();
+    var boissonValue = document.getElementById("boisson").value;
+    var heureLivraisonValue = document.getElementById("heureLivraison").value;
+    var nomValue = document.getElementById("nom").value;
+    var prenomValue = document.getElementById("prenom").value;
+    var adresseValue = document.getElementById("adresse").value;
+    var telephoneValue = document.getElementById("telephone").value;
+    
+    var commande = {
+        baseSalade: baseSaladeValue,
+        ingredients: selectedIngredients,
+        boisson: boissonValue,
+        heureLivraison: heureLivraisonValue,
+        nom: nomValue,
+        prenom: prenomValue,
+        adresse: adresseValue,
+        telephone: telephoneValue
+      };
+
+      localStorage.setItem("derniereCommande", JSON.stringify(commande));
+
+      document.getElementById("saladForm").reset();
+});
+
+function getSelectedIngredients() {
+    var checkboxes = document.querySelectorAll("#ingredientsContainer input[type=checkbox]:checked");
+    var selectedIngredients = [];
+    for (var i = 0; i < checkboxes.length; i++) {
+      selectedIngredients.push(checkboxes[i].value);
+    }
+    return selectedIngredients;
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    var lastOrder = localStorage.getItem("derniereCommande");
+    var lastOrderDetails = document.getElementById("lastOrderDetails");
+  
+    if (lastOrder) {
+      var commande = JSON.parse(lastOrder);
+      var detailsHtml = "<p><strong>Base :</strong> " + commande.baseSalade + "</p>";
+      detailsHtml += "<p><strong>Ingrédients :</strong> " + commande.ingredients.join(", ") + "</p>";
+      detailsHtml += "<p><strong>Boisson :</strong> " + commande.boisson + "</p>";
+      detailsHtml += "<p><strong>Heure de livraison :</strong> " + commande.heureLivraison + "</p>";
+      detailsHtml += "<p><strong>Nom :</strong> " + commande.nom + "</p>";
+      detailsHtml += "<p><strong>Prénom :</strong> " + commande.prenom + "</p>";
+      detailsHtml += "<p><strong>Adresse :</strong> " + commande.adresse + "</p>";
+      detailsHtml += "<p><strong>Téléphone :</strong> " + commande.telephone + "</p>";
+  
+      lastOrderDetails.innerHTML = detailsHtml;
+    } else {
+      lastOrderDetails.innerHTML = "<p>Aucune commande existante</p>";
+    }
+  });
+
+  document.getElementById("baseSalade").addEventListener("change", updateCurrentSelections);
+  document.querySelectorAll("#ingredientsContainer input[type=checkbox]").forEach(function(checkbox) {
+    checkbox.addEventListener("change", updateCurrentSelections);
+  });
+  document.getElementById("boisson").addEventListener("change", updateCurrentSelections);
+  
+  function updateCurrentSelections() {
+    var baseSaladeValue = document.getElementById("baseSalade").value;
+    var selectedIngredients = getSelectedIngredients();
+    var boissonValue = document.getElementById("boisson").value;
+  
+    var currentSelections = document.getElementById("currentSelections");
+    var selectionsHtml = "";
+  
+    if (baseSaladeValue) {
+      selectionsHtml += "<p><strong>Base :</strong> " + baseSaladeValue + "</p>";
+    }
+    if (selectedIngredients.length > 0) {
+      selectionsHtml += "<p><strong>Ingrédients :</strong> " + selectedIngredients.join(", ") + "</p>";
+    }
+    if (boissonValue) {
+      selectionsHtml += "<p><strong>Boisson :</strong> " + boissonValue + "</p>";
+    }
+  
+    if (selectionsHtml !== "") {
+      currentSelections.innerHTML = selectionsHtml;
+    } else {
+      currentSelections.innerHTML = "<p>Aucune sélection en cours</p>";
+    }
+  }document.getElementById("baseSalade").addEventListener("change", updateCurrentSelections);
+document.querySelectorAll("#ingredientsContainer input[type=checkbox]").forEach(function(checkbox) {
+  checkbox.addEventListener("change", updateCurrentSelections);
+});
+document.getElementById("boisson").addEventListener("change", updateCurrentSelections);
+
+function updateCurrentSelections() {
+  var baseSaladeValue = document.getElementById("baseSalade").value;
+  var selectedIngredients = getSelectedIngredients();
+  var boissonValue = document.getElementById("boisson").value;
+
+  var currentSelections = document.getElementById("currentSelections");
+  var selectionsHtml = "";
+
+  if (baseSaladeValue) {
+    selectionsHtml += "<p><strong>Base :</strong> " + baseSaladeValue + "</p>";
+  }
+  if (selectedIngredients.length > 0) {
+    selectionsHtml += "<p><strong>Ingrédients :</strong> " + selectedIngredients.join(", ") + "</p>";
+  }
+  if (boissonValue) {
+    selectionsHtml += "<p><strong>Boisson :</strong> " + boissonValue + "</p>";
+  }
+
+  if (selectionsHtml !== "") {
+    currentSelections.innerHTML = selectionsHtml;
+  } else {
+    currentSelections.innerHTML = "<p>Aucune sélection en cours</p>";
+  }
+}
+
+var baseSaladeForm = document.getElementById("baseSaladForm");
+var envoyerButton = document.getElementById("envoyerButton");
+
+baseSaladeForm.addEventListener("input", function() {
+  var isValid = baseSaladeForm.checkValidity();
+  envoyerButton.disabled = !isValid;
+});
