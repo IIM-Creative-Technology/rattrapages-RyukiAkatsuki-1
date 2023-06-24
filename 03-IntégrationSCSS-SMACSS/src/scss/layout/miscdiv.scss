@@ -35,6 +35,7 @@
         padding: 20px;
         h2 {
             font-size: 52px;
+            color: #B2D234;
         }
         p {
             font-size: 18px;
@@ -50,6 +51,7 @@
         h3 {
             font-size: 24px;
             padding-top: 30px;
+            color: #B2D234;
         }
         p {
             font-size: 18px;
@@ -63,6 +65,7 @@
             }
             .blueforce {
                 font-size: 64px;
+                color: #60A0D8;
             }
             p {
                 padding: 20px;
@@ -70,10 +73,18 @@
             }
             button {
                 padding: 10px 30px 10px 30px;
+                background-color: #B2D234;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 24px
             }
         }
         .allMenu {
             padding: 100px;
+        }
+        .halfhalf {
+            border: 1px solid #B2D234;
         }
     }
     .price {
@@ -177,6 +188,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            color: #B2D234;
+            font-family: 'PoppinsItalic', sans-serif;
             .names {
                 display: flex;
                 justify-content: space-between;
@@ -196,6 +209,8 @@
                 padding: 20px;  
                 input {
                     padding: 10px;
+                    font-size: 18px;
+                    color: #B2D234;
                 }
             }
             .emailMotivation {

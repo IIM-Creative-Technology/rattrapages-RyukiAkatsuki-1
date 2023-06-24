@@ -6,67 +6,67 @@
 
 @font-face {
   font-family: "PoppinsBlack";
-  src: url("./fonts/Poppins-Black.ttf");
+  src: url("../../font/Poppins-Black.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsBlackItalic";
-  src: url("./fonts/Poppins-BlackItalic.ttf");
+  src: url("../../font/Poppins-BlackItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsBold";
-  src: url("./fonts/Poppins-Bold.ttf");
+  src: url("../../font/Poppins-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsBoldItalic";
-  src: url("./fonts/Poppins-BoldItalic.ttf");
+  src: url("../../font/Poppins-BoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsExtraBold";
-  src: url("./fonts/Poppins-ExtraBold.ttf");
+  src: url("../../font/Poppins-ExtraBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsExtraBoldItalic";
-  src: url("./fonts/Poppins-ExtraBoldItalic.ttf");
+  src: url("../../font/Poppins-ExtraBoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsItalic";
-  src: url("./fonts/Poppins-Italic.ttf");
+  src: url("../../font/Poppins-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsLight";
-  src: url("./fonts/Poppins-Light.ttf");
+  src: url("../../font/Poppins-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsLightItalic";
-  src: url("./fonts/Poppins-LightItalic.ttf");
+  src: url("../../font/Poppins-LightItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("./fonts/Poppins-Medium.ttf");
+  src: url("../../font/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsMediumItalic";
-  src: url("./fonts/Poppins-MediumItalic.ttf");
+  src: url("../../font/Poppins-MediumItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsRegular";
-  src: url("./fonts/Poppins-Regular.ttf");
+  src: url("../../font/Poppins-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsSemiBold";
-  src: url("./fonts/Poppins-SemiBold.ttf");
+  src: url("../../font/Poppins-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsSemiBoldItalic";
-  src: url("./fonts/Poppins-SemiBoldItalic.ttf");
+  src: url("../../font/Poppins-SemiBoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsThin";
-  src: url("./fonts/Poppins-Thin.ttf");
+  src: url("../../font/Poppins-Thin.ttf") format("truetype");
 }
 @font-face {
   font-family: "PoppinsThinItalic";
-  src: url("./fonts/Poppins-ThinItalic.ttf");
+  src: url("../../font/Poppins-ThinItalic.ttf") format("truetype");
 }
 .saladeMesure {
   display: flex;
@@ -78,6 +78,7 @@
 }
 .saladeMesure .leftMesure h2 {
   font-size: 52px;
+  color: #B2D234;
 }
 .saladeMesure .leftMesure p {
   padding-top: 30px;
@@ -88,6 +89,11 @@
 }
 .saladeMesure button {
   padding: 10px 30px 10px 30px;
+  background-color: #B2D234;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
 }
 
 header {
@@ -118,6 +124,7 @@ header .navBar ul a {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  font-family: "PoppinsLight", sans-serif;
 }
 header .title {
   display: flex;
@@ -129,9 +136,11 @@ header .title {
 }
 header .title h1 {
   font-size: 126px;
+  font-family: "PoppinsMedium", sans-serif;
 }
 header .title p {
   font-size: 54px;
+  font-family: "PoppinsItalic", sans-serif;
 }
 header .socialMedia {
   font-size: 36px;
@@ -205,6 +214,7 @@ footer p {
 }
 .menuList .centerLine h2 {
   font-size: 52px;
+  color: #B2D234;
 }
 .menuList .centerLine p {
   font-size: 18px;
@@ -220,6 +230,7 @@ footer p {
 .menuList .bottomLine h3 {
   font-size: 24px;
   padding-top: 30px;
+  color: #B2D234;
 }
 .menuList .bottomLine p {
   font-size: 18px;
@@ -234,6 +245,7 @@ footer p {
 }
 .menuList .bottomLine .forces .blueforce {
   font-size: 64px;
+  color: #60A0D8;
 }
 .menuList .bottomLine .forces p {
   padding: 20px;
@@ -241,9 +253,17 @@ footer p {
 }
 .menuList .bottomLine .forces button {
   padding: 10px 30px 10px 30px;
+  background-color: #B2D234;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
 }
 .menuList .bottomLine .allMenu {
   padding: 100px;
+}
+.menuList .bottomLine .halfhalf {
+  border: 1px solid #B2D234;
 }
 .menuList .price {
   display: flex;
@@ -347,6 +367,8 @@ footer p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #B2D234;
+  font-family: "PoppinsItalic", sans-serif;
 }
 .envie .leftEnvie .formAll .names {
   display: flex;
@@ -368,6 +390,8 @@ footer p {
 }
 .envie .leftEnvie .formAll .formNames input {
   padding: 10px;
+  font-size: 18px;
+  color: #B2D234;
 }
 .envie .leftEnvie .formAll .emailMotivation {
   display: flex;

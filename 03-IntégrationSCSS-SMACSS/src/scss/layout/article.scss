@@ -6,6 +6,7 @@
         padding: 80px;
         h2 {
             font-size: 52px;
+            color: #B2D234;
         }
         p {
             padding-top: 30px;
@@ -17,5 +18,10 @@
     }
     button {
         padding: 10px 30px 10px 30px;
+        background-color: #B2D234;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 24px
     }
 }
