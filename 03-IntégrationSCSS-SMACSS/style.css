@@ -146,6 +146,26 @@ header .socialMedia i {
   padding: 10px;
 }
 
+footer {
+  background-color: #B2D234;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 70px;
+  color: white;
+}
+footer img {
+  width: 300px;
+}
+footer h3 {
+  font-size: 27px;
+}
+footer p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
 .preparePlace {
   background-image: url("src/img/ismael-trevino-NDyuR4Huig8-unsplash.jpg");
   background-size: cover;
