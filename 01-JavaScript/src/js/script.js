@@ -129,7 +129,7 @@ document.getElementById("baseSaladForm").addEventListener("submit", function(eve
 
       localStorage.setItem("derniereCommande", JSON.stringify(commande));
 
-      document.getElementById("saladForm").reset();
+      document.getElementById("baseSaladForm").reset();
 });
 
 function getSelectedIngredients() {
