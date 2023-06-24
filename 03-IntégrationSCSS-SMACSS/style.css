@@ -155,6 +155,10 @@ header .socialMedia i {
   padding: 10px;
 }
 
+.fa-bars {
+  display: none;
+}
+
 footer {
   background-color: #B2D234;
   display: flex;
