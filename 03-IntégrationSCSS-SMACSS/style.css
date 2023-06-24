@@ -4,6 +4,78 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
+@font-face {
+  font-family: "";
+  src: url();
+}
 .saladeMesure {
   display: flex;
   justify-content: space-between;
@@ -165,6 +237,72 @@ header .socialMedia i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.greenBlue {
+  background-image: url("src/img/louis-hansel-MlPD-AzZYMg-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  padding: 90px;
+}
+.greenBlue .blueGreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 120px;
+  text-align: center;
+}
+.greenBlue .greenAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #B2D23494;
+}
+.greenBlue .greenAll .rowGreen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 80px;
+}
+.greenBlue .greenAll .rowGreen .leftGreen {
+  padding: 90px;
+}
+.greenBlue .greenAll h3 {
+  font-size: 52px;
+  padding: 20px;
+}
+.greenBlue .greenAll p {
+  font-size: 18px;
+}
+.greenBlue .blueAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #60A0D894;
+}
+.greenBlue .blueAll .rowBlue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 90px;
+}
+.greenBlue .blueAll .rowBlue .rightBlue {
+  padding: 100px;
+}
+.greenBlue .blueAll h3 {
+  font-size: 52px;
+  padding: 20px;
+}
+.greenBlue .blueAll p {
+  font-size: 18px;
+}
+.greenBlue .seperatorBlueGreen {
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

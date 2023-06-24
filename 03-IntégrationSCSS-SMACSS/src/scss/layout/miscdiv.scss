@@ -82,3 +82,69 @@
         align-items: center;
     }
 }
+
+.greenBlue {
+    background-image: url("src/img/louis-hansel-MlPD-AzZYMg-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    padding: 90px;
+    .blueGreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 120px;
+        text-align: center;
+    }
+    .greenAll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #B2D23494;
+        .rowGreen {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 80px;
+            .leftGreen {
+                padding: 90px;
+            }
+        }
+        h3 {
+            font-size: 52px;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .blueAll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #60A0D894;
+        .rowBlue {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 90px;
+            .rightBlue {
+                padding: 100px;
+            }
+        }
+        h3 {
+            font-size: 52px;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .seperatorBlueGreen {
+        padding: 30px;
+    }
+}
