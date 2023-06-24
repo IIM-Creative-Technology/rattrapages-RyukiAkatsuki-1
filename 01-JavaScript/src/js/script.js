@@ -74,6 +74,7 @@ for (var i = 0; i < boissons.length; i++) {
 }
 
 var ingredientsContainer = document.getElementById("ingredientsContainer");
+var selectedIngredients = 0;
 
 for (var i = 0; i < ingredients.length; i++) {
   var ingredient = ingredients[i];
@@ -83,6 +84,19 @@ for (var i = 0; i < ingredients.length; i++) {
   checkbox.type = "checkbox";
   checkbox.name = "ingredient";
   checkbox.value = ingredient.nom;
+
+  checkbox.addEventListener("change", function() {
+    if (this.checked) {
+      selectedIngredients++;
+    } else {
+      selectedIngredients--;
+    }
+
+    var checkboxes = document.querySelectorAll('input[name="ingredient"]');
+    for (var j = 0; j < checkboxes.length; j++) {
+      checkboxes[j].disabled = selectedIngredients >= 4 && !checkboxes[j].checked;
+    }
+  });
 
   label.appendChild(checkbox);
   label.appendChild(document.createTextNode(ingredient.nom));
