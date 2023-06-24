@@ -64,3 +64,11 @@ for (var i = 0; i < basesSalades.length; i++) {
   option.textContent = basesSalades[i];
   selectBaseSalade.appendChild(option);
 }
+
+var selectBoisson = document.getElementById("boisson");
+for (var i = 0; i < boissons.length; i++) {
+  var option = document.createElement("option");
+  option.value = boissons[i];
+  option.textContent = boissons[i];
+  selectBoisson.appendChild(option);
+}
