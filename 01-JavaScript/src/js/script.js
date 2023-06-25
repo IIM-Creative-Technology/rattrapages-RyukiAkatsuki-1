@@ -229,3 +229,48 @@ baseSaladeForm.addEventListener("input", function() {
   var isValid = baseSaladeForm.checkValidity();
   envoyerButton.disabled = !isValid;
 });
+
+var checkboxes = document.querySelectorAll('input[name="ingredient"]');
+var prixContainer = document.getElementById("prixContainer");
+
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener("change", function() {
+    var selectedIngredients = document.querySelectorAll('input[name="ingredient"]:checked');
+    var selectedBleuIngredients = 0;
+    var selectedVertIngredients = 0;
+
+    for (var j = 0; j < selectedIngredients.length; j++) {
+      var ingredientName = selectedIngredients[j].value;
+      var ingredient = ingredients.find(function(item) {
+        return item.nom === ingredientName;
+      });
+
+      if (ingredient.categorie === "bleu") {
+        selectedBleuIngredients++;
+      } else if (ingredient.categorie === "vert") {
+        selectedVertIngredients++;
+      }
+    }
+
+    var prix = calculatePrice(selectedBleuIngredients, selectedVertIngredients);
+    prixContainer.textContent = "Prix : " + prix.toFixed(2) + "€";
+  });
+}
+
+function calculatePrice(selectedBleuIngredients, selectedVertIngredients) {
+  var prixBleu = 0;
+  var prixVert = 0;
+
+  for (var i = 0; i < ingredients.length; i++) {
+    var ingredient = ingredients[i];
+
+    if (ingredient.categorie === "bleu") {
+      prixBleu += parseFloat(ingredient.prix);
+    } else if (ingredient.categorie === "vert") {
+      prixVert += parseFloat(ingredient.prix);
+    }
+  }
+
+  var prixTotal = (selectedBleuIngredients * prixBleu) + (selectedVertIngredients * prixVert);
+  return prixTotal;
+}
