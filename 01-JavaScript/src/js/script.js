@@ -197,31 +197,6 @@ document.querySelectorAll("#ingredientsContainer input[type=checkbox]").forEach(
 });
 document.getElementById("boisson").addEventListener("change", updateCurrentSelections);
 
-function updateCurrentSelections() {
-  var baseSaladeValue = document.getElementById("baseSalade").value;
-  var selectedIngredients = getSelectedIngredients();
-  var boissonValue = document.getElementById("boisson").value;
-
-  var currentSelections = document.getElementById("currentSelections");
-  var selectionsHtml = "";
-
-  if (baseSaladeValue) {
-    selectionsHtml += "<p><strong>Base :</strong> " + baseSaladeValue + "</p>";
-  }
-  if (selectedIngredients.length > 0) {
-    selectionsHtml += "<p><strong>Ingrédients :</strong> " + selectedIngredients.join(", ") + "</p>";
-  }
-  if (boissonValue) {
-    selectionsHtml += "<p><strong>Boisson :</strong> " + boissonValue + "</p>";
-  }
-
-  if (selectionsHtml !== "") {
-    currentSelections.innerHTML = selectionsHtml;
-  } else {
-    currentSelections.innerHTML = "<p>Aucune sélection en cours</p>";
-  }
-}
-
 var baseSaladeForm = document.getElementById("baseSaladForm");
 var envoyerButton = document.getElementById("envoyerButton");
 
