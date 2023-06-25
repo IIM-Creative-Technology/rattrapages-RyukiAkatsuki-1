@@ -161,12 +161,6 @@ function getSelectedIngredients() {
       lastOrderDetails.innerHTML = "<p>Aucune commande existante</p>";
     }
   });
-
-  document.getElementById("baseSalade").addEventListener("change", updateCurrentSelections);
-  document.querySelectorAll("#ingredientsContainer input[type=checkbox]").forEach(function(checkbox) {
-    checkbox.addEventListener("change", updateCurrentSelections);
-  });
-  document.getElementById("boisson").addEventListener("change", updateCurrentSelections);
   
   function updateCurrentSelections() {
     var baseSaladeValue = document.getElementById("baseSalade").value;
